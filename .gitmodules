@@ -1,3 +1,6 @@
 [submodule "sdntrace_cp"]
 	path = sdntrace_cp
 	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/sdntrace_cp.git
+[submodule "grafana-amlight-app-sdnlg"]
+	path = grafana-amlight-app-sdnlg
+	url = ssh://git@gitlab.ampath.net:2712/rogerio/grafana-amlight-app-sdnlg.git
