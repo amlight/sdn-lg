@@ -1,0 +1,3 @@
+[submodule "sdntrace_cp"]
+	path = sdntrace_cp
+	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/sdntrace_cp.git
