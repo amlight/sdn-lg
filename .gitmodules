@@ -4,3 +4,6 @@
 [submodule "grafana-amlight-app-sdnlg"]
 	path = grafana-amlight-app-sdnlg
 	url = ssh://git@gitlab.ampath.net:2712/rogerio/grafana-amlight-app-sdnlg.git
+[submodule "coloring"]
+	path = coloring
+	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/coloring.git
