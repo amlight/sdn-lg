@@ -10,3 +10,6 @@
 [submodule "scheduler"]
 	path = scheduler
 	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/scheduler.git
+[submodule "kytos_flow_manager"]
+	path = kytos_flow_manager
+	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/kytos_flow_manager.git
