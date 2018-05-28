@@ -18,3 +18,11 @@ services:
       - "3000:3000"
     depends_on:
       - "influxdb"
+  kytos:
+    image: kytos/nightly
+    network_mode: host
+    ports:
+      - "6633:6633"
+      - "6653:6653"
+    environment:
+      - KYTOS_NAPPS="kytos/of_core"
