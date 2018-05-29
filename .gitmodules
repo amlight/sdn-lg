@@ -16,3 +16,6 @@
 [submodule "flow_stats"]
 	path = flow_stats
 	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/flow_stats.git
+[submodule "kytos_courier"]
+	path = kytos_courier
+	url = ssh://git@gitlab.ampath.net:2712/amlight/kytos_courier.git
