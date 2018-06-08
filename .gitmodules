@@ -1,21 +1,21 @@
 [submodule "sdntrace_cp"]
 	path = sdntrace_cp
-	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/sdntrace_cp.git
+  url = https://github.com/amlight/sdntrace_cp.git
 [submodule "grafana-amlight-app-sdnlg"]
 	path = grafana-amlight-app-sdnlg
-	url = ssh://git@gitlab.ampath.net:2712/rogerio/grafana-amlight-app-sdnlg.git
+  url = https://github.com/amlight/grafana-amlight-app-sdnlg.git
 [submodule "coloring"]
 	path = coloring
-	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/coloring.git
+  url = https://github.com/amlight/coloring.git
 [submodule "scheduler"]
 	path = scheduler
-	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/scheduler.git
+  url = https://github.com/amlight/scheduler.git
 [submodule "sdntrace"]
 	path = sdntrace
-	url = ssh://git@gitlab.ampath.net:2712/amlight/sdntrace.git
+  url = https://github.com/amlight/sdntrace.git
 [submodule "flow_stats"]
 	path = flow_stats
-	url = ssh://git@gitlab.ampath.net:2712/sdn-lg/flow_stats.git
+	url = https://github.com/amlight/flow_stats.git
 [submodule "kytos_courier"]
 	path = kytos_courier
-	url = ssh://git@gitlab.ampath.net:2712/amlight/kytos_courier.git
+  url = https://github.com/amlight/kytos_courier.git
