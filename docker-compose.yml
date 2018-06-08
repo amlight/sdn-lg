@@ -10,7 +10,7 @@ services:
     ports:
       - "8086:8086"
   grafana:
-    image: grafana/grafana:5.0.3
+    image: quay.io/viniciusarcanjo/grafana:sdnlg
     network_mode: host
     volumes:
       - /var/lib/grafana
@@ -18,11 +18,39 @@ services:
       - "3000:3000"
     depends_on:
       - "influxdb"
+    environment:
+      - "GF_PATHS_PLUGINS=/data/grafana/plugins"
   kytos:
     image: kytos/nightly
     network_mode: host
+    command: kytosd -f -E
+    tty: true
+    stdin_open: true
     ports:
       - "6633:6633"
       - "6653:6653"
+      - "8181:8181"
+    volumes:
+      - ./kytos.conf:/etc/kytos/kytos.conf
+      - ./flow_stats:/var/lib/kytos/napps/amlight/flow_stats
+      - ./coloring/:/var/lib/kytos/napps/amlight/coloring
+      - ./kytos_courier/:/var/lib/kytos/napps/amlight/kytos_courier
+      - ./scheduler/:/var/lib/kytos/napps/amlight/scheduler
+      - ./sdntrace_cp/:/var/lib/kytos/napps/amlight/sdntrace_cp
+      - ./sdntrace/:/var/lib/kytos/napps/amlight/sdntrace
+  ofp_sniffer:
+    image: quay.io/viniciusarcanjo/ofp_sniffer:dev
+    command: /bin/bash -c 'python3.6 /opt/ofp_sniffer/ofp_sniffer.py -i lo -S -I'
+    privileged: true
+    stdin_open: true
+    tty: true
+    # build:
+    #   context: ./ofp_sniffer/
+    #   dockerfile: Dockerfile.ofp_sniffer
+    network_mode: host
+    volumes:
+      - ./ofp_sniffer:/opt/ofp_sniffer
     environment:
-      - KYTOS_NAPPS="kytos/of_core"
+      PYTHON: /usr/bin/python3.6
+    depends_on:
+      - "influxdb"
