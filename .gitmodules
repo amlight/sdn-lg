@@ -19,3 +19,6 @@
 [submodule "kytos_courier"]
 	path = kytos_courier
   url = https://github.com/amlight/kytos_courier.git
+[submodule "ofp_sniffer"]
+	path = ofp_sniffer
+	url = https://github.com/amlight/ofp_sniffer.git
