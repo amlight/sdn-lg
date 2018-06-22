@@ -18,6 +18,18 @@ In order to spin up all containers:
 docker-compose up -d
 ```
 
+After everything is up and running, Kytos interface can then be accessed at
+
+```
+http://localhost:8181
+```
+
+and Grafana interface at
+
+```
+http://localhost:3000
+```
+
 ## Contact
 
 You can reach out at `dev@amlight.net`.
