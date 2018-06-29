@@ -35,7 +35,7 @@ and Grafana interface at
 http://localhost:3000
 ```
 
-To use Grafana interface, default user is `admin` and passwoard `admin`.
+To use Grafana interface, default user is `admin` and passwoard `admin`. The documentation on the web interface can be accessed [here](https://github.com/amlight/grafana-amlight-app-sdnlg/blob/master/README.md).
 
 ## Contact
 
