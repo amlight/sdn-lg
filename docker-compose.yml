@@ -21,7 +21,7 @@ services:
     environment:
       - "GF_PATHS_PLUGINS=/data/grafana/plugins"
   kytos:
-    image: kytos/nightly
+    image: ajoaoff/sdn-lg
     network_mode: host
     command: kytosd -f -E
     tty: true
